@@ -1,4 +1,4 @@
-'user strict'
+'use strict'
 var express = require('express');
 const DbConnector = require('./modules/dbConnector.js');
 const config = require('./modules/config.js');
