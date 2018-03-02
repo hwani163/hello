@@ -30,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(passport.initialize());
 app.use(passport.session());
+auth.init();
 
 
 
@@ -57,25 +58,6 @@ app.use(function(err, req, res, next) {
 });
 
 
-
-// function loginCheck() {
-//   return function (req, res, next) {
-//     const url  = req.url;
-//     if (!(/^\/login/.test(url))) {
-//       console.log('loginCheck.....');
-//       let bearerHeader = req.headers['auth'];
-//       if (typeof bearerHeader !== 'undefined') {
-//           let bearer = bearerHeader.split(" ");
-//           let bearerToken = bearer[1];
-//           console.log(bearerToken);
-//           req.token = bearerToken;
-//           next();
-//       }else {
-//         res.render('login');
-//       }
-//     }
-//   }
-// }
 
 
 module.exports = app;

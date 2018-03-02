@@ -33,7 +33,7 @@
 ehthumbs.db
 Icon?
 Thumbs.db
-
+*.ftpconfig
 
 
 # nodeModules #
@@ -43,6 +43,3 @@ node_modules/
 
 #configFile#
 *config.js
-
-
-.*
