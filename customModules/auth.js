@@ -3,7 +3,7 @@ const NaverStrategy = require('passport-naver').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const KakaoStrategy = require('passport-kakao').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-const config = require('./modules/config.js');
+
 
 const NAVER_CLIENT_KEY=null;
 const NAVER_SECRET_KEY=null;
