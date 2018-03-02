@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const index = require('./routes/index');
 const login = require('./routes/login');
+const auth = require('./customModules/auth');
 const app = express();
 
 // view engine setup

@@ -1,6 +1,6 @@
 'use strict'
 const express = require('express');
-const DbConnector = require('./modules/dbConnector.js');
+const DbConnector = require('../customModuels/dbConnector.js');
 const dbconnector = new DbConnector();
 const router = express.Router();
 const passport = require('passport');

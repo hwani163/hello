@@ -1,4 +1,4 @@
-const DbConnector = require('./modules/dbConnector.js');
+const DbConnector = require('../customModuels/dbConnector.js');
 const NaverStrategy = require('passport-naver').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const KakaoStrategy = require('passport-kakao').Strategy;
