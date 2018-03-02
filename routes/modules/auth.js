@@ -1,29 +1,8 @@
-const logger = require('morgan');
-var express = require('express');
-const DbConnector = require('./dbConnector.js');
-const config = require('./config.js');
-const connector = new DbConnector();
-var router = express.Router();
+'use strict';
 
+var ensureAuthenticated = function (req, res, next) {
+  if (req.isAuthenticated()) { return next(); }
+  res.redirect('/login');
+};
 
-function isvalidToken(token){
-  if (typeof token == "undefined") {
-    return false;
-  }else{
-    //토큰 유효성 인증
-    return true;
-  }
-}
-
-function login(id,password){
-  if (id=="test") {
-    return true;
-  }else{
-    return false;
-  }
-}
-
-
-
-exports.isvalidToken = isvalidToken;
-exports.login = login;
+exports.ensureAuthenticated = ensureAuthenticated;

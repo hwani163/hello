@@ -1,20 +1,31 @@
 	<% include header %>
-	<input type="text" id ="id">
+		<!-- <input type="text" id ="id">
 	<input type="text" id = "password">
-	<button id ="login">로그인</button>
-	<script>
-
-	$("#login").click(function(){
-		$.ajax({
-			url     : '/login'
-			,type    : 'POST'
-			,async   : false
-			,data    : {id : $("#id").val(),password : $("#password").val()}
-			,success : function(dt) {
-				alert(dt);
-			}
-		});
-	});
-
-	</script>
+	<button id ="login">로그인</button> -->
+	<form action="/login" method="post" name="frm_login" id="frm_login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-center">Node JS Passport Login</h1>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" class="form-control input-lg" placeholder="ID" required="required" autocomplete="off" />
+                </div>
+                <div class="errorTxt"></div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Password" required="required" autocomplete="off" />
+                </div>
+                <div class="errorTxt"></div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-block btn-lg btn-default btn_login" value="Login" />
+                    <a href="/login/facebook">FaceBook</a>
+                    <a href="/login/kakao">KaKao</a>
+                    <a href="/login/naver">Naver</a>
+										<a href="/login/google">Google</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 	<% include footer %>

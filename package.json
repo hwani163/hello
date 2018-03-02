@@ -6,17 +6,24 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bluebird": "*",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.15.5",
     "ejs": "*",
+    "express": "~4.15.5",
+    "http2": "^3.3.7",
+    "moment": "^2.20.1",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
-    ,"mysql2": "*"
-    ,"moment":"^2.20.1"
-    ,"bluebird":"*"
-    ,"socket.io":"2.0.4"
-    ,"passport-local":"^1.0.0"
+    "mysql2": "*",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-kakao": "0.0.5",
+    "passport-local": "^1.0.0",
+    "passport-naver": "^1.0.6",
+    "serve-favicon": "~2.4.5",
+    "socket.io": "2.0.4",
+    "spdy": "^3.4.7"
   }
 }
