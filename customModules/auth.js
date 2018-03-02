@@ -16,7 +16,7 @@ const APP_SECRET_KEY=null;
 
 
 
-const init = function (){
+
   (async function () {
     let query = "SELECT KEY,VALUE FROM GENL_CD WHERE GROUP =? AND STTUS_CD='Y'";
     const apiKey = await dbconnector.query(query,['LOGIN_API']);
@@ -156,7 +156,3 @@ const init = function (){
 
       }());
   }
-
-}
-
-module.exports = init;
