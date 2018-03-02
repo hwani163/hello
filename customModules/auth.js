@@ -5,14 +5,14 @@ const KakaoStrategy = require('passport-kakao').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const config = require('./modules/config.js');
 
-const NAVER_CLIENT_KEY;
-const NAVER_SECRET_KEY;
-const FACEBOOK_CLIENT_KEY;
-const FACEBOOK_SECRET_KEY;
-const KAKAO_CLIENT_KEY;
-const GOOGLE_CLIENT_KEY;
-const GOOGLE_SECRET_KEY;
-const APP_SECRET_KEY;
+const NAVER_CLIENT_KEY=null;
+const NAVER_SECRET_KEY=null;
+const FACEBOOK_CLIENT_KEY=null;
+const FACEBOOK_SECRET_KEY=null;
+const KAKAO_CLIENT_KEY=null;
+const GOOGLE_CLIENT_KEY=null;
+const GOOGLE_SECRET_KEY=null;
+const APP_SECRET_KEY=null;
 
 
 
